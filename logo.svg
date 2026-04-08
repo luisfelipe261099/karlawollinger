@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="metalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4dce6"/>
+      <stop offset="30%" style="stop-color:#f0f4f8"/>
+      <stop offset="50%" style="stop-color:#ffffff"/>
+      <stop offset="70%" style="stop-color:#e0e8f0"/>
+      <stop offset="100%" style="stop-color:#b8c8d8"/>
+    </linearGradient>
+    <linearGradient id="metalGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c0ccd8"/>
+      <stop offset="40%" style="stop-color:#e8eff5"/>
+      <stop offset="60%" style="stop-color:#f5f8fb"/>
+      <stop offset="100%" style="stop-color:#d0dae6"/>
+    </linearGradient>
+    <linearGradient id="metalEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#b0bfcf"/>
+      <stop offset="50%" style="stop-color:#8a9db3"/>
+      <stop offset="100%" style="stop-color:#b0bfcf"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eff5"/>
+      <stop offset="50%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#c8d4e0"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6b7b8d" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Left triangle (facing right/up) -->
+  <g filter="url(#shadow)">
+    <polygon points="155,15 220,105 90,105" fill="url(#metalGrad1)" stroke="url(#metalEdge)" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Right triangle (facing left/up) -->
+  <g filter="url(#shadow)">
+    <polygon points="245,15 310,105 180,105" fill="url(#metalGrad2)" stroke="url(#metalEdge)" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Center overlap area - brighter -->
+  <polygon points="200,15 220,105 180,105" fill="url(#metalGrad1)" opacity="0.5"/>
+  
+  <!-- Divider line in center -->
+  <line x1="200" y1="20" x2="200" y2="100" stroke="#8a9db3" stroke-width="1" opacity="0.6"/>
+  
+  <!-- KARLA WOLLINGER text -->
+  <text x="200" y="140" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="300" letter-spacing="8" fill="url(#textGrad)" stroke="#a0b0c0" stroke-width="0.3">KARLA WOLLINGER</text>
+  
+  <!-- REPRESENTAÇÕES text -->
+  <text x="200" y="168" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="300" letter-spacing="10" fill="#b0c0d0">REPRESENTAÇÕES</text>
+</svg>
