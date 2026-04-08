@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; padding: 40px; background: #e8e8e8; font-family: 'Segoe UI', Arial, sans-serif; }
+.card {
+    width: 800px;
+    height: 800px;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='15' cy='15' r='1'/%3E%3C/g%3E%3C/svg%3E");
+}
+.c1 { background: linear-gradient(135deg, #2c5f8a 0%, #4a82aa 50%, #6ea4c5 100%); }
+.c2 { background: linear-gradient(135deg, #3a6b5e 0%, #4a8b7a 50%, #6aab9a 100%); }
+.c3 { background: linear-gradient(135deg, #5a4a7a 0%, #7a6a9a 50%, #9a8aba 100%); }
+.c4 { background: linear-gradient(135deg, #6a5040 0%, #8a7060 50%, #aa9080 100%); }
+.c5 { background: linear-gradient(135deg, #2a5a7a 0%, #3a7a9a 50%, #5a9aba 100%); }
+.c6 { background: linear-gradient(135deg, #4a6080 0%, #6a80a0 50%, #8aa0c0 100%); }
+
+.content { position: relative; z-index: 2; padding: 60px; }
+.icon { font-size: 80px; margin-bottom: 30px; opacity: 0.9; }
+.brand-tag {
+    display: inline-block;
+    padding: 8px 24px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+p {
+    font-size: 20px;
+    opacity: 0.85;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+.badge {
+    display: inline-block;
+    padding: 12px 32px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.products {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+.products span {
+    padding: 8px 20px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 50px;
+    font-size: 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.logo-mini {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0.6;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+.divider {
+    width: 60px;
+    height: 2px;
+    background: rgba(255,255,255,0.4);
+    margin: 0 auto 24px;
+}
+
+h3 { font-weight: 400; font-size: 16px; letter-spacing: 6px; margin-bottom: 30px; text-transform: uppercase; opacity: 0.7; }
+</style>
+</head>
+<body>
+
+<!-- CARD 1 - Tróppel -->
+<div class="card c1">
+    <div class="content">
+        <div class="brand-tag">Marca Representada</div>
+        <div class="icon">🧴</div>
+        <h2>Tróppel</h2>
+        <h3>Limpeza Geral</h3>
+        <div class="divider"></div>
+        <p>Linha completa de produtos para limpeza e desinfecção de ambientes</p>
+        <div class="products">
+            <span>Desinfetantes</span>
+            <span>Água Sanitária</span>
+            <span>Detergentes</span>
+            <span>Multi Usos</span>
+        </div>
+    </div>
+    <div class="logo-mini">KARLA WOLLINGER REPRESENTAÇÕES</div>
+</div>
+
+<!-- CARD 2 - Bellplus -->
+<div class="card c2">
+    <div class="content">
+        <div class="brand-tag">Marca Representada</div>
+        <div class="icon">🧼</div>
+        <h2>Bellplus</h2>
+        <h3>Higiene Profissional</h3>
+        <div class="divider"></div>
+        <p>Sabonetes de alta qualidade e equipamentos dispensadores profissionais</p>
+        <div class="products">
+            <span>Sabonetes Líquidos</span>
+            <span>Sabonetes Barra</span>
+            <span>Dispensadores</span>
+            <span>Equipamentos</span>
+        </div>
+    </div>
+    <div class="logo-mini">KARLA WOLLINGER REPRESENTAÇÕES</div>
+</div>
+
+<!-- CARD 3 - Gióca -->
+<div class="card c3">
+    <div class="content">
+        <div class="brand-tag">Marca Representada</div>
+        <div class="icon">🏭</div>
+        <h2>Gióca</h2>
+        <h3>Sanitários & Embalagens</h3>
+        <div class="divider"></div>
+        <p>Pedra sanitária, soda e linha completa de embalagens Giopack</p>
+        <div class="products">
+            <span>Pedra Sanitária</span>
+            <span>Soda</span>
+            <span>Embalagens Giopack</span>
+        </div>
+    </div>
+    <div class="logo-mini">KARLA WOLLINGER REPRESENTAÇÕES</div>
+</div>
+
+<!-- CARD 4 - AFP -->
+<div class="card c4">
+    <div class="content">
+        <div class="brand-tag">Marca Representada</div>
+        <div class="icon">🗑️</div>
+        <h2>AFP</h2>
+        <h3>Sacos de Lixo</h3>
+        <div class="divider"></div>
+        <p>Sacos de lixo para todas as necessidades — residencial, comercial e hospitalar</p>
+        <div class="products">
+            <span>Lixo Preto</span>
+            <span>Colorido</span>
+            <span>Hospitalar</span>
+        </div>
+    </div>
+    <div class="logo-mini">KARLA WOLLINGER REPRESENTAÇÕES</div>
+</div>
+
+<!-- CARD 5 - Ecopel -->
+<div class="card c5">
+    <div class="content">
+        <div class="brand-tag">Marca Representada</div>
+        <div class="icon">🧻</div>
+        <h2>Ecopel</h2>
+        <h3>Papéis para Higiene</h3>
+        <div class="divider"></div>
+        <p>Papéis de alta qualidade para higiene profissional e uso doméstico</p>
+        <div class="products">
+            <span>Toalha Interfolhado</span>
+            <span>Bobina 200m</span>
+            <span>Higiênico Rolão</span>
+        </div>
+    </div>
+    <div class="logo-mini">KARLA WOLLINGER REPRESENTAÇÕES</div>
+</div>
+
+<!-- CARD 6 - Institucional -->
+<div class="card c6">
+    <div class="content">
+        <div class="brand-tag">Direto da Indústria</div>
+        <div class="icon">💰</div>
+        <h2>Melhores Preços<br>de Curitiba</h2>
+        <h3>Sem Intermediários</h3>
+        <div class="divider"></div>
+        <p>Atendemos empresas (CNPJ) e pessoa física (CPF) em Curitiba, região metropolitana e litoral do Paraná</p>
+        <div class="badge">📱 WhatsApp: (41) 98593-242</div>
+    </div>
+    <div class="logo-mini">KARLA WOLLINGER REPRESENTAÇÕES</div>
+</div>
+
+</body>
+</html>

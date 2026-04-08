@@ -555,12 +555,49 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    align-items: start;
+}
+
+/* --- Sobre Foto --- */
+.sobre-foto-wrap {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.sobre-foto {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
+    border: 4px solid var(--white);
+    outline: 1px solid var(--border);
+}
+
+.sobre-foto-badge {
+    position: absolute;
+    bottom: -14px;
+    left: 24px;
+    display: inline-flex;
     align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--white);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(74, 111, 148, 0.4);
+}
+
+.sobre-foto-badge i {
+    font-size: 0.9rem;
 }
 
 .sobre-card-stack {
     position: relative;
-    height: 400px;
+    height: 200px;
 }
 
 .sobre-card {
@@ -592,22 +629,22 @@ section {
 }
 
 .sobre-card.card-1 {
-    top: 20px;
-    left: 10px;
+    top: 0;
+    left: 0;
     z-index: 3;
     animation: floatCard 3s ease-in-out infinite;
 }
 
 .sobre-card.card-2 {
-    top: 140px;
-    left: 50px;
+    top: 0;
+    left: 220px;
     z-index: 2;
     animation: floatCard 3s ease-in-out 0.5s infinite;
 }
 
 .sobre-card.card-3 {
-    top: 260px;
-    left: 20px;
+    top: 80px;
+    left: 60px;
     z-index: 1;
     animation: floatCard 3s ease-in-out 1s infinite;
 }
@@ -1499,6 +1536,15 @@ section {
     }
 
     .sobre-visual {
+        display: block;
+        text-align: center;
+    }
+
+    .sobre-foto {
+        max-width: 320px;
+    }
+
+    .sobre-card-stack {
         display: none;
     }
 
